@@ -1,0 +1,209 @@
+{
+  "github_source_repo": "https://github.com/serpcompany/mygoodporn-downloader",
+  "serply_link": "https://serp.ly/mygoodporn-downloader",
+  "app_name": "Mygoodporn Video Downloader",
+  "short_description": "Download & Save Mygoodporn Videos Easily for Offline Viewing (Browser Extension)",
+  "long_description": "Downloader for MyGoodPorn is a browser extension built specifically for MyGoodPorn.tv video pages. It focuses on the branded.tv route pattern where media may sit behind an embedded player or iframe rather than being exposed directly. The extension is positioned to detect stream candidates after the page shell and any player handoff have loaded.",
+  "main_video": "",
+  "featured_image": "",
+  "screenshots": [
+    "https://apps.serp.co/media/optimized-products/mygoodporn-downloader-fullscreen-01-c8e539dfca.webp",
+    "https://apps.serp.co/media/optimized-products/mygoodporn-downloader-fullscreen-02-f553f67854.webp",
+    "https://apps.serp.co/media/optimized-products/mygoodporn-downloader-fullscreen-03-3916d901a1.webp",
+    "https://apps.serp.co/media/optimized-products/mygoodporn-downloader-fullscreen-04-4ca6ffb268.webp"
+  ],
+  "chromestore_link": "",
+  "firefoxstore_link": "",
+  "other_links": [],
+  "faqs": [
+    {
+      "question": "What page pattern does this extension support?",
+      "answer": "It is built for MyGoodPorn.tv pages that follow the /video/{slug}/ route, such as /video/82649/rose-hart-sex-tape-video-leaked/."
+    },
+    {
+      "question": "Does the extension work on every MyGoodPorn.tv page?",
+      "answer": "It is designed specifically for video pages with the /video/{slug}/ pattern. Other page types may not be supported."
+    },
+    {
+      "question": "Why does the extension need the page to load fully first?",
+      "answer": "MyGoodPorn.tv may use iframe or embedded-player handoff before the actual media stream appears. The extension waits for these layers to initialize so it can detect the real source."
+    },
+    {
+      "question": "What video formats can I expect?",
+      "answer": "The extension looks for MP4 and M3U8/HLS stream candidates that become available after the player loads."
+    },
+    {
+      "question": "Is this extension fully release-ready?",
+      "answer": "The target is verified and ready, but the project is still in candidate stage. Stale configuration surfaces and generated stub behavior may limit full release confidence."
+    }
+  ],
+  "permissions": [
+    {
+      "name": "",
+      "description": "Only download content you own or have explicit permission to save"
+    }
+  ],
+  "features": [
+    "MyGoodPorn.tv-specific branding and product URL",
+    "Positioned around /video/{slug}/ route pages",
+    "Prepared for likely iframe or embedded-player handoff",
+    "Stream hints include MP4 and M3U8 formats",
+    "Target-verified with target-ready status",
+    "MyGoodPorn.tv-specific page targeting for /video/{slug}/ routes",
+    "Likely iframe and embedded-player handoff awareness",
+    "MP4 and M3U8 stream detection when available",
+    "Clean popup interface for download initiation",
+    "Stream-quality selection when multiple options are present",
+    "No external dependencies or third-party servers",
+    "Privacy-focused operation with no tracking",
+    "Regular updates aligned with site changes"
+  ],
+  "content": {
+    "why": [
+      "MyGoodPorn.tv video pages follow a specific route pattern: /video/{slug}/. This structure can hide the actual player surface behind the page shell, making manual media discovery difficult. Generic downloaders often fail because they expect direct file links rather than the embedded-player handoff that these pages may use.",
+      "This extension is built around that exact page pattern. It watches the branded.tv page shell, then looks for exposed stream candidates after any iframe or player handoff occurs. Instead of pretending every page offers a simple download button, it acknowledges the real flow: let the page and its embedded layers load, then detect the media when it becomes available."
+    ],
+    "how_it_works": [
+      "Install the extension from the latest release.",
+      "Open MyGoodPorn.tv and go to a supported video page.",
+      "Start playback so the extension can detect the media.",
+      "Open the popup or use the on-page controls.",
+      "Choose the quality option you want.",
+      "Start the download and wait for the MP4 export to finish.",
+      "Save the final file locally."
+    ],
+    "tutorial": [
+      "Open your browser and navigate to a MyGoodPorn.tv video page that follows the /video/{slug}/ pattern.",
+      "Let the page fully load, including any embedded player or iframe layers.",
+      "Click the extension icon in your browser toolbar to open the popup.",
+      "The extension will scan the page for available stream sources.",
+      "If multiple quality options are detected, select your preferred resolution.",
+      "Click the download button to begin the transfer.",
+      "Wait for the file to complete processing and saving.",
+      "Access your downloaded video from the browser downloads folder."
+    ],
+    "supported_formats": [
+      "Input: MP4 and M3U8/HLS streams detected on MyGoodPorn.tv video pages",
+      "Output: MP4",
+      "Saved files use MP4 so they are easier to replay on standard media players, move between devices, or archive locally."
+    ],
+    "target_users": [
+      "Users who regularly visit MyGoodPorn.tv and want to save videos locally",
+      "People who prefer offline access to their favorite content",
+      "Users who want a dedicated tool for the MyGoodPorn.tv platform",
+      "Anyone who needs to archive videos from /video/{slug}/ pages"
+    ],
+    "use_cases": [
+      "Saving videos from MyGoodPorn.tv for offline viewing",
+      "Archiving content that may be removed from the platform",
+      "Building a personal media library from your favorite creators",
+      "Avoiding repeated streaming for frequently watched content",
+      "Capturing videos that appear behind iframe or embedded players"
+    ],
+    "troubleshooting": [
+      "The extension does not detect any video on the page Make sure the video player has fully loaded and playback has started. Some pages require the iframe or embedded layer to initialize before the stream becomes detectable.",
+      "The download starts but fails partway through Check your internet connection and ensure you have enough storage space. Try refreshing the page and starting the download again.",
+      "The extension icon is grayed out on MyGoodPorn.tv This usually means you are not on a supported /video/{slug}/ page. Navigate to a video page that matches the expected route pattern.",
+      "Multiple quality options are not showing Not all videos offer multiple resolutions. The extension will display whatever streams are available on the page.",
+      "The download appears as an M3U8 file instead of MP4 The extension may need to process the stream before converting it. Wait for the conversion to complete before saving the final file."
+    ],
+    "trial_access": [
+      "Includes 3 free downloads so you can test the workflow first",
+      "Email sign-in uses secure one-time password verification",
+      "No credit card required for the trial",
+      "Unlimited downloads are available with a paid license"
+    ],
+    "installation_instructions": [
+      "Open the latest release page.",
+      "Download the correct build for your browser.",
+      "Install the extension.",
+      "Open a supported MyGoodPorn.tv page.",
+      "Use the popup to detect and download the media."
+    ],
+    "notes": [
+      "Only download content you own or have explicit permission to save",
+      "An internet connection is required for downloads",
+      "MyGoodPorn.tv video pages may use leak-tape-style slug wording in their URLs",
+      "The extension is positioned for candidate-stage use and may not be fully validated on every page"
+    ],
+    "about": [
+      "MyGoodPorn.tv is a video platform that hosts content on branded.tv domains. Video pages follow a /video/{slug}/ route pattern where the media may be delivered through embedded players or iframe handoff rather than direct file links."
+    ]
+  },
+  "serpx_link": "https://serpx.link/mygoodporn-downloader",
+  "github_topics": [
+    "mygoodporn-download",
+    "mygoodporn-downloader",
+    "mygoodporn-video-downloader",
+    "mygoodporn-video-downloader-online",
+    "mygoodporn-video-downloader-mac",
+    "mygoodporn-video-downloader-window",
+    "mygoodporn-video-downloader-free",
+    "mygoodporn-video-downloader-extension",
+    "mygoodporn-video-downloader-app",
+    "mygoodporn-video-downloader-chrome",
+    "mygoodporn-video-downloader-from-url",
+    "how-to-download-mygoodporn-videos",
+    "how-to-download-mygoodporn-videos-mac",
+    "how-to-download-mygoodporn-videos-windows",
+    "how-to-download-mygoodporn-videos-online",
+    "how-to-download-mygoodporn-videos-free",
+    "how-to-download-from-mygoodporn",
+    "how-to-download-videos-from-mygoodporn",
+    "download-mygoodporn-videos",
+    "mygoodporn-video-tutorial",
+    "save-mygoodporn-videos",
+    "mygoodporn-video-content-saver",
+    "how-to-download-mygoodporn-videos-for-free"
+  ],
+  "hashtags": [
+    "#MygoodpornDownload",
+    "#MygoodpornDownloader",
+    "#MygoodpornVideoDownloader",
+    "#MygoodpornVideoDownloaderOnline",
+    "#MygoodpornVideoDownloaderMac",
+    "#MygoodpornVideoDownloaderWindow",
+    "#MygoodpornVideoDownloaderFree",
+    "#MygoodpornVideoDownloaderExtension",
+    "#MygoodpornVideoDownloaderApp",
+    "#MygoodpornVideoDownloaderChrome",
+    "#MygoodpornVideoDownloaderFromURL",
+    "#HowToDownloadMygoodpornVideos",
+    "#HowToDownloadMygoodpornVideosMac",
+    "#HowToDownloadMygoodpornVideosWindows",
+    "#HowToDownloadMygoodpornVideosOnline",
+    "#HowToDownloadMygoodpornVideosFree",
+    "#HowToDownloadFromMygoodporn",
+    "#HowToDownloadVideosFromMygoodporn",
+    "#DownloadMygoodpornVideos",
+    "#MygoodpornVideoTutorial",
+    "#SaveMygoodpornVideos",
+    "#MygoodpornVideoContentSaver",
+    "#HowToDownloadMygoodpornVideosForFree"
+  ],
+  "youtube_tags": [
+    "Mygoodporn Download",
+    "Mygoodporn Downloader",
+    "Mygoodporn Video Downloader",
+    "Mygoodporn Video Downloader Online",
+    "Mygoodporn Video Downloader Mac",
+    "Mygoodporn Video Downloader Window",
+    "Mygoodporn Video Downloader Free",
+    "Mygoodporn Video Downloader Extension",
+    "Mygoodporn Video Downloader App",
+    "Mygoodporn Video Downloader Chrome",
+    "Mygoodporn Video Downloader From URL",
+    "How To Download Mygoodporn Videos",
+    "How To Download Mygoodporn Videos Mac",
+    "How To Download Mygoodporn Videos Windows",
+    "How To Download Mygoodporn Videos Online",
+    "How To Download Mygoodporn Videos Free",
+    "How To Download From Mygoodporn",
+    "How To Download Videos From Mygoodporn",
+    "Download Mygoodporn Videos",
+    "Mygoodporn Video Tutorial",
+    "Save Mygoodporn Videos",
+    "Mygoodporn Video Content Saver",
+    "How To Download Mygoodporn Videos For Free"
+  ]
+}
